@@ -8,7 +8,7 @@ from PIL import Image
 import base64
 
 st.title("Conversión de Texto a Audio")
-image = Image.open('tito_rojas.png')
+image = Image.open('tito_rojas.jpg')
 st.image(image, width=350, caption="Tito Rojas — Álbum «Sensual»")
 with st.sidebar:
     st.subheader("Escribe y/o selecciona texto para ser escuchado.")
