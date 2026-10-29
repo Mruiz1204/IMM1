@@ -8,8 +8,8 @@ from PIL import Image
 import base64
 
 st.title("Conversión de Texto a Audio")
-image = Image.open('gato_raton.png')
-st.image(image, width=350)
+image = Image.open('tito_rojas.png')
+st.image(image, width=350, caption="Tito Rojas — Álbum «Sensual»")
 with st.sidebar:
     st.subheader("Escribe y/o selecciona texto para ser escuchado.")
 
@@ -18,10 +18,16 @@ try:
 except:
     pass
 
-st.subheader("Un pedacito de salsa 🎶")
-st.write("Siempre seré, mira quién te calma tus deseos de amar, ese soy yo. "
-         "Siempre seré quien te enamore una y otra vez, siempre seré. "
-         "— Tito Rojas, «Siempre seré»")
+st.subheader("Un pedacito de salsa 🎶 — «Siempre seré» de Tito Rojas")
+st.write(
+    "Siempre seré, mira quién te calma tus deseos de amar, ese soy yo. "
+    "Siempre, como la lluvia que moja tu pelo. "
+    "Siempre seré, pero que siempre, siempre seré tu consuelo. "
+    "Siempre, y por las noches si no estás conmigo, yo me desvelo. "
+    "Como el aire que toca tu pelo, como lluvia que dejas caer, "
+    "así soy para ti en los momentos que deseo volverte a tener. "
+    "— Tito Rojas, «Siempre seré»"
+)
 
 st.markdown(f"¿Quieres escucharlo? Copia el texto de arriba y pégalo en el recuadro 👇")
 text = st.text_area("Ingrese el texto a escuchar.")
